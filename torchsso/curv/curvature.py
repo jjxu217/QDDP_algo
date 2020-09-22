@@ -172,7 +172,7 @@ class Curvature(object):
             self.update_std()
 
     def update_ema(self):
-        data = self.data
+        data = self._data
         ema = self.ema
         ema_max = self.ema_max
         beta = self.ema_decay
